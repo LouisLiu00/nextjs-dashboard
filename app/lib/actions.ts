@@ -107,7 +107,8 @@ export async function updateInvoice(id: string, prevState: State, formData: Form
 
 // 根据主键删除发票
 export async function deleteInvoice(id: string) {
-    throw new Error('Failed to Delete Invoice');
+    // 通过主动抛出异常来模拟数据库错误
+    // throw new Error('Failed to Delete Invoice');
     
     try {
         await sql`DELETE FROM invoices WHERE id = ${id}`;
