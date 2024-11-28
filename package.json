@@ -4,13 +4,9 @@
     "build": "next build",
     "dev": "next dev --turbo",
     "start": "next start",
-    "lint": "next lint",
-    "pages:build": "npx @cloudflare/next-on-pages",
-    "preview": "npm run pages:build && wrangler pages dev",
-    "deploy": "npm run pages:build && wrangler pages deploy"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@cloudflare/next-on-pages": "^1.13.5",
     "@heroicons/react": "^2.2.0",
     "@tailwindcss/forms": "^0.5.9",
     "@vercel/postgres": "^0.8.0",
