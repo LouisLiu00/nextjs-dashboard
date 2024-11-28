@@ -1,11 +1,11 @@
 import '@/app/ui/global.css';
-import { inter } from '@/app/ui/fonts';
+import { lexend_deca } from '@/app/ui/fonts';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | Acme Dashboard',
-    default: 'Acme Dashboard',
+    template: '%s | Dashboard',
+    default: 'Dashboard',
   },
   description: 'The official Next.js  Dashboard, built with App Router.',
   metadataBase: new URL('https://nextjs-dashboard-flame-alpha.vercel.app'),
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${lexend_deca.className} antialiased`}>{children}</body>
     </html>
   );
 }
